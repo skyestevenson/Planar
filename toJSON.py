@@ -36,13 +36,15 @@ def add_object(
         "t" : (0, 0, 0),
         "r" : (0, 0, 0),
         "s" : (1, 1, 1)
-    }
+    },
+    physics_enabled = False
 ):
     # each object has a unique id
     id = str(uuid.uuid4())
     plane["objects"][id] = {
         "asset" : asset,
-        "transform" : transform
+        "transform" : transform,
+        "physics_enabled" : physics_enabled
     }
 
 ######## CREATE WORLD ########
@@ -53,7 +55,8 @@ add_object(
         "t" : (128.51, 33.27, 0.78),
         "r" : (33.27, 77,8, 12.03),
         "s" : (1, 1, 1)
-    }
+    },
+    physics_enabled = True
 )
 
 json_out = json.dumps(plane, indent = 1)

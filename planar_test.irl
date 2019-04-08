@@ -1,6 +1,7 @@
 {
  "objects": {
-  "43f82c64-95f1-42c0-9366-757c842f2dde": {
+  "798b4906-6b34-41c8-ac30-afd9aa764fb3": {
+   "physics_enabled": true, 
    "asset": "Block.obj", 
    "transform": {
     "s": [
