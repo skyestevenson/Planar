@@ -1,6 +1,27 @@
 {
  "objects": {
-  "f2e5111c-d59b-4556-8c59-c9ebf4d7a698": {
+  "7b39517c-780e-4f1f-97ef-9996a170711b": {
+   "physics_enabled": false, 
+   "asset": "Wall.obj", 
+   "transform": {
+    "s": [
+     1, 
+     1, 
+     1
+    ], 
+    "r": [
+     0, 
+     0, 
+     0
+    ], 
+    "t": [
+     0, 
+     0, 
+     0
+    ]
+   }
+  }, 
+  "1462ee7c-15ed-4654-9659-30c24517fa8c": {
    "physics_enabled": true, 
    "asset": "Block.obj", 
    "transform": {
@@ -19,27 +40,6 @@
      128.51, 
      33.27, 
      0.78
-    ]
-   }
-  }, 
-  "7795ebd1-a9ac-445f-a657-62d22ee0e20d": {
-   "physics_enabled": false, 
-   "asset": "Wall.obj", 
-   "transform": {
-    "s": [
-     1, 
-     1, 
-     1
-    ], 
-    "r": [
-     0, 
-     0, 
-     0
-    ], 
-    "t": [
-     0, 
-     0, 
-     0
     ]
    }
   }

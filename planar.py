@@ -3,7 +3,7 @@ import json
 import os
 
 # initialize plane
-def init_plane(
+def init(
     name = "World",
     population_max = 100,
     boundaries = {

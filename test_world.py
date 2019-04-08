@@ -1,7 +1,7 @@
 import planar
 
 ######## CREATE WORLD ########
-planar.init_plane()
+planar.init()
 planar.add_object(
     asset = "Block.obj",
     transform = {
@@ -14,6 +14,15 @@ planar.add_object(
 planar.add_object(
     asset = "Wall.obj"
 )
+
+
+
+
+
+
+
+
+
 
 # finally, save to file!
 planar.export(plane = planar.plane)
