@@ -17,3 +17,16 @@ planar.add_object(
 
 # finally, save to file!
 planar.export(plane = planar.plane)
+
+#### LOOKING AT THE DATA ####
+import os
+import json
+world = open("planar_test.irl")
+world = json.load(world)
+
+print("\nGlobal Properties:")
+print("Gravity: {}m/s^2".format(world["global_properties"]["gravity"]))
+
+print("\nObjects:")
+for key, value in world["objects"].items():
+    print("{}\n- asset: {}\n- physics enabled: {}\n- location: {}".format(key, value["asset"], value["physics_enabled"], value["transform"]["t"]))

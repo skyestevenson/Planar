@@ -1,6 +1,6 @@
 {
  "objects": {
-  "971c5d6c-8f20-4db8-b96a-5a11760b88eb": {
+  "277d6881-ab0e-400c-b049-1aafd7baeb7f": {
    "physics_enabled": true, 
    "asset": "Block.obj", 
    "transform": {
@@ -22,7 +22,7 @@
     ]
    }
   }, 
-  "47d447ce-cb21-4cec-8596-4dcfe99bea26": {
+  "17e42e8c-f076-4ffe-8b10-858d044cde26": {
    "physics_enabled": false, 
    "asset": "Wall.obj", 
    "transform": {
