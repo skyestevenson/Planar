@@ -43,7 +43,7 @@ def add_object(
         "transform" : transform
     }
 
-#### CREATE WORLD ####
+######## CREATE WORLD ########
 init_cell()
 add_object(
     asset = "Block.obj",
