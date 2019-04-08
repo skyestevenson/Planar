@@ -28,3 +28,4 @@ TODO:
 - Abstractify (you heard me) assets vs their sources
   - Asset #UUID has source "PATH"
   - "PATH" can change, #UUID cannot
+  - This would allow for changing the source files of assets, while making sure every "cup" in the scene remains a "cup" without major surgery
