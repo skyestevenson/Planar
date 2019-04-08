@@ -4,13 +4,13 @@
   "terrain": {
    "heightmap": "LandscapeHeight.png", 
    "dimensions": [
-    500, 
-    500
+    1000, 
+    1000
    ]
   }
  }, 
  "objects": {
-  "5f78e009-c1db-4a89-801e-8ffbac39d5ca": {
+  "347fe618-77ab-4df3-b62d-df6ec858f9ff": {
    "physics_enabled": false, 
    "asset": "Wall.obj", 
    "transform": {
@@ -31,7 +31,7 @@
     ]
    }
   }, 
-  "8704d45c-7922-486a-b8da-75dcccf023fc": {
+  "ae8d961c-f2e4-415e-b813-36bdd9172475": {
    "physics_enabled": true, 
    "asset": "Block.obj", 
    "transform": {
