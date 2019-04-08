@@ -1,5 +1,3 @@
-import json
-import os
 import planar
 
 ######## CREATE WORLD ########
@@ -17,13 +15,5 @@ planar.add_object(
     asset = "Wall.obj"
 )
 
-json_out = json.dumps(planar.plane, indent = 1)
-
-# export the result
-outName = "planar_test.irl"
-outFile = open(outName,"w")
-outFile.write(json_out)
-outFile.close()
-
-# report file size
-print("JSON file size: {}kB".format(os.path.getsize(outName) / 1000.0))
+# finally, save to file!
+planar.export(plane = planar.plane)

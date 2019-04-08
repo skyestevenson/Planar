@@ -1,4 +1,6 @@
 import uuid
+import json
+import os
 
 # initialize plane
 def init_plane(
@@ -42,3 +44,17 @@ def add_object(
         "transform" : transform,
         "physics_enabled" : physics_enabled
     }
+
+
+# export the result
+def export(plane, file_name = "planar_test.irl"):
+    # turn dict object into JSON
+    json_out = json.dumps(plane, indent = 1)
+
+    # write JSON to file
+    out_file = open(file_name,"w")
+    out_file.write(json_out)
+    out_file.close()
+
+    # report file size
+    print("JSON file size: {}kB".format(os.path.getsize(file_name) / 1000.0))
