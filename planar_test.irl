@@ -1,6 +1,6 @@
 {
  "objects": {
-  "63581c7e-3d5b-4fb8-abf8-7c97a2e98767": {
+  "a1a40fb4-a728-449b-9366-0b7035cb87f2": {
    "physics_enabled": true, 
    "asset": "Block.obj", 
    "transform": {
@@ -22,7 +22,7 @@
     ]
    }
   }, 
-  "3bd6da36-a6ae-4251-bbe6-71e4823d8760": {
+  "220b39fa-73a4-45a4-90cf-27271ee36319": {
    "physics_enabled": false, 
    "asset": "Wall.obj", 
    "transform": {
@@ -50,7 +50,6 @@
   "Wall.obj"
  ], 
  "global_properties": {
-  "population_max": 100, 
   "name": "Aetheria", 
   "player_start": [
    0, 

@@ -6,7 +6,6 @@ import os
 def init(
     name = "World",
     description = "This is a virtual world.",
-    population_max = 100,
     boundaries = {
         "x" : (-1000, 1000),
         "y" : (-1000, 1000),
@@ -24,7 +23,6 @@ def init(
     plane["global_properties"] = {
         "name" : name,
         "description" : description,
-        "population_max" : population_max,
         "boundaries" : boundaries,
         "player_start" : player_start,
         "gravity" : gravity

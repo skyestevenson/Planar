@@ -11,7 +11,6 @@ Basic structure of Planar:
     - paths
   - global_properties
     - name (string)
-    - population_max (integer)
     - boundaries
       - x (tuple, 2 integers)
       - y (tuple, 2 integers)
@@ -35,3 +34,9 @@ TODO:
   - Asset #UUID has source "PATH"
   - "PATH" can change, #UUID cannot
   - This would allow for changing the source files of assets, while making sure every "cup" in the scene remains a "cup" without major surgery
+- Overworld
+  - 2D grid of coordinates, hosted online, with each coordinate associated with a particular Plane
+  - client for accessing it
+  - user uploaded Planes
+- Standardized package system for each Plane
+  - Single file
