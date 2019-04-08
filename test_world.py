@@ -1,7 +1,11 @@
 import planar
 
 ######## CREATE WORLD ########
-planar.init()
+planar.init(
+    name = "Aetheria",
+    description = "This is the first Plane created with the Planar system. Basically, just a testbed."
+)
+planar.set_skybox("HDRI_Night.exr")
 planar.add_object(
     asset = "Block.obj",
     transform = {
@@ -32,6 +36,8 @@ import os
 import json
 world = open("planar_test.irl")
 world = json.load(world)
+
+print("\n{}\n{}".format(world["global_properties"]["name"], world["global_properties"]["description"]))
 
 print("\nGlobal Properties:")
 print("Gravity: {}m/s^2".format(world["global_properties"]["gravity"]))

@@ -5,6 +5,7 @@ import os
 # initialize plane
 def init(
     name = "World",
+    description = "This is a virtual world.",
     population_max = 100,
     boundaries = {
         "x" : (-1000, 1000),
@@ -22,6 +23,7 @@ def init(
     }
     plane["global_properties"] = {
         "name" : name,
+        "description" : description,
         "population_max" : population_max,
         "boundaries" : boundaries,
         "player_start" : player_start,
@@ -53,6 +55,11 @@ def add_asset(path):
     # only add it if it's not in the asset list already
     if path not in plane["assets"]:
         plane["assets"].append(path)
+
+# set up the skybox from an asset
+def set_skybox(path):
+    plane["global_properties"]["skybox"] = path
+    add_asset(path)
 
 # export the result
 def export(plane, file_name = "planar_test.irl"):

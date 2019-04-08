@@ -17,6 +17,8 @@ Basic structure of Planar:
       - y (tuple, 2 integers)
       - z (tuple, 2 integers)
     - gravity (float)
+    - skybox
+      - asset
   - objects
     - uuid #
       - asset (string)
