@@ -1,0 +1,48 @@
+{
+ "objects": {
+  "b4fa8ebb-e462-4f1e-a575-f31e75eca36e": {
+   "asset": "Block.obj", 
+   "transform": {
+    "s": [
+     1, 
+     1, 
+     1
+    ], 
+    "r": [
+     33.27, 
+     77, 
+     8, 
+     12.03
+    ], 
+    "t": [
+     128.51, 
+     33.27, 
+     0.78
+    ]
+   }
+  }
+ }, 
+ "global_properties": {
+  "boundaries": {
+   "y": [
+    -1000, 
+    1000
+   ], 
+   "x": [
+    -1000, 
+    1000
+   ], 
+   "z": [
+    -1000, 
+    1000
+   ]
+  }, 
+  "population_max": 100, 
+  "name": "World", 
+  "player_start": [
+   0, 
+   0, 
+   0
+  ]
+ }
+}
