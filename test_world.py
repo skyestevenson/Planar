@@ -6,6 +6,7 @@ planar.init(
     description = "This is the first Plane created with the Planar system. Basically, just a testbed."
 )
 planar.set_skybox("HDRI_Night.exr")
+planar.set_terrain(heightmap = "LandscapeHeight.png", dimensions = (500, 500))
 planar.add_object(
     asset = "Block.obj",
     transform = {

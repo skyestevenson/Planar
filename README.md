@@ -16,8 +16,13 @@ Basic structure of Planar:
       - y (tuple, 2 integers)
       - z (tuple, 2 integers)
     - gravity (float)
+  - environment
     - skybox
-      - asset
+      - HDRI asset
+    - terrain
+      - dimensions
+      - heightmap asset
+
   - objects
     - uuid #
       - asset (string)

@@ -1,6 +1,37 @@
 {
+ "environment": {
+  "skybox": "HDRI_Night.exr", 
+  "terrain": {
+   "heightmap": "LandscapeHeight.png", 
+   "dimensions": [
+    500, 
+    500
+   ]
+  }
+ }, 
  "objects": {
-  "a1a40fb4-a728-449b-9366-0b7035cb87f2": {
+  "5f78e009-c1db-4a89-801e-8ffbac39d5ca": {
+   "physics_enabled": false, 
+   "asset": "Wall.obj", 
+   "transform": {
+    "s": [
+     1, 
+     1, 
+     1
+    ], 
+    "r": [
+     0, 
+     0, 
+     0
+    ], 
+    "t": [
+     0, 
+     0, 
+     0
+    ]
+   }
+  }, 
+  "8704d45c-7922-486a-b8da-75dcccf023fc": {
    "physics_enabled": true, 
    "asset": "Block.obj", 
    "transform": {
@@ -21,42 +52,15 @@
      0.78
     ]
    }
-  }, 
-  "220b39fa-73a4-45a4-90cf-27271ee36319": {
-   "physics_enabled": false, 
-   "asset": "Wall.obj", 
-   "transform": {
-    "s": [
-     1, 
-     1, 
-     1
-    ], 
-    "r": [
-     0, 
-     0, 
-     0
-    ], 
-    "t": [
-     0, 
-     0, 
-     0
-    ]
-   }
   }
  }, 
  "assets": [
   "HDRI_Night.exr", 
+  "LandscapeHeight.png", 
   "Block.obj", 
   "Wall.obj"
  ], 
  "global_properties": {
-  "name": "Aetheria", 
-  "player_start": [
-   0, 
-   0, 
-   0
-  ], 
-  "gravity": -9.8, 
   "boundaries": {
    "y": [
     -1000, 
@@ -71,7 +75,13 @@
     1000
    ]
   }, 
-  "skybox": "HDRI_Night.exr", 
+  "gravity": -9.8, 
+  "name": "Aetheria", 
+  "player_start": [
+   0, 
+   0, 
+   0
+  ], 
   "description": "This is the first Plane created with the Planar system. Basically, just a testbed."
  }
 }

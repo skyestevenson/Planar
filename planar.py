@@ -18,6 +18,7 @@ def init(
     plane = {
         "assets" : [],
         "global_properties" : {},
+        "environment" : {},
         "objects" : {}
     }
     plane["global_properties"] = {
@@ -55,9 +56,20 @@ def add_asset(path):
         plane["assets"].append(path)
 
 # set up the skybox from an asset
-def set_skybox(path):
-    plane["global_properties"]["skybox"] = path
-    add_asset(path)
+def set_skybox(image):
+    plane["environment"]["skybox"] = image
+    add_asset(image)
+
+# set up terrain
+def set_terrain(
+    heightmap,
+    dimensions = (1000, 1000)
+):
+    plane["environment"]["terrain"] = {
+        "dimensions" : dimensions,
+        "heightmap" : heightmap
+    }
+    add_asset(heightmap)
 
 # export the result
 def export(plane, file_name = "planar_test.irl"):
