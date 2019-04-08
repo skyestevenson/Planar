@@ -9,8 +9,22 @@
    ]
   }
  }, 
+ "links": [
+  {
+   "destination": [
+    500, 
+    500, 
+    500
+   ], 
+   "location": [
+    100, 
+    150, 
+    1.5
+   ]
+  }
+ ], 
  "objects": {
-  "347fe618-77ab-4df3-b62d-df6ec858f9ff": {
+  "1e10f44b-5b1d-4914-a7e2-68dac0034efa": {
    "physics_enabled": false, 
    "asset": "Wall.obj", 
    "transform": {
@@ -31,7 +45,7 @@
     ]
    }
   }, 
-  "ae8d961c-f2e4-415e-b813-36bdd9172475": {
+  "77067dbe-4510-42a5-9de8-be19ddbd5385": {
    "physics_enabled": true, 
    "asset": "Block.obj", 
    "transform": {

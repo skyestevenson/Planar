@@ -19,9 +19,10 @@ planar.add_object(
 planar.add_object(
     asset = "Wall.obj"
 )
-
-
-
+planar.add_link(
+    location = (100, 150, 1.5),
+    destination = (500, 500, 500)
+)
 
 
 

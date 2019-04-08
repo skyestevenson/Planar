@@ -19,7 +19,8 @@ def init(
         "assets" : [],
         "global_properties" : {},
         "environment" : {},
-        "objects" : {}
+        "objects" : {},
+        "links" : []
     }
     plane["global_properties"] = {
         "name" : name,
@@ -70,6 +71,16 @@ def set_terrain(
         "heightmap" : heightmap
     }
     add_asset(heightmap)
+
+# add a link to the plane
+def add_link(
+    location = (0, 0, 0),
+    destination = (0, 0, 0)
+):
+    plane["links"].append({
+        "location" : location,
+        "destination" : destination 
+    })
 
 # export the result
 def export(plane, file_name = "planar_test.irl"):

@@ -30,6 +30,9 @@ Basic structure of Planar:
         - r (tuple, 3 floats)
         - s (tuple, 3 floats)
       - physics_enabled (boolean)
+  - links (usable objects that teleport player to locations)
+    - location (tuple, 3 floats)
+    - destination (tuple, 3 floats)
 
 TODO:
 - Dependency system
@@ -44,3 +47,5 @@ TODO:
   - user uploaded Planes
 - Standardized package system for each Plane
   - Single file
+- Inter-planar links
+  - make a hyperlink system that can teleport the player between locations in planes
