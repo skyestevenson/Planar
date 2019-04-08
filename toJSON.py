@@ -57,7 +57,7 @@ add_object(
 json_out = json.dumps(cell, indent = 1)
 
 # export the result
-outName = "cell_test.cll"
+outName = "planar_test.irl"
 outFile = open(outName,"w")
 outFile.write(json_out)
 outFile.close()
