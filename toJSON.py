@@ -4,8 +4,8 @@ import os
 
 # this is a high-level description of a game / vr world - endgame is to write compilers that take this language and reconstruct the environment and its basic multiplayer properties in any engine; basically, it's like HTML but for virtual worlds
 
-# initialize cell
-def init_cell(
+# initialize plane
+def init_plane(
     name = "World",
     population_max = 100,
     boundaries = {
@@ -13,21 +13,23 @@ def init_cell(
         "y" : (-1000, 1000),
         "z" : (-1000, 1000)
     },
-    player_start = (0, 0, 0)
+    player_start = (0, 0, 0),
+    gravity = -9.8
 ):
-    global cell
-    cell = {
+    global plane
+    plane = {
         "global_properties" : {},
         "objects" : {}
     }
-    cell["global_properties"] = {
+    plane["global_properties"] = {
         "name" : name,
         "population_max" : population_max,
         "boundaries" : boundaries,
-        "player_start" : player_start
+        "player_start" : player_start,
+        "gravity" : gravity
     }
 
-# add an object to the cell, with a unique id
+# add an object to the plane, with a unique id
 def add_object(
     asset = "",
     transform = {
@@ -38,13 +40,13 @@ def add_object(
 ):
     # each object has a unique id
     id = str(uuid.uuid4())
-    cell["objects"][id] = {
+    plane["objects"][id] = {
         "asset" : asset,
         "transform" : transform
     }
 
 ######## CREATE WORLD ########
-init_cell()
+init_plane()
 add_object(
     asset = "Block.obj",
     transform = {
@@ -54,7 +56,7 @@ add_object(
     }
 )
 
-json_out = json.dumps(cell, indent = 1)
+json_out = json.dumps(plane, indent = 1)
 
 # export the result
 outName = "planar_test.irl"
