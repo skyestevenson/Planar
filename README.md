@@ -1,8 +1,14 @@
 # Planar
 Engine-Agnostic Virtual World Markup Language
 
+Planar is a standardized way of storing basic information needed to construct realtime 3D environments in a way that, conceivably, could be integrated into multiple engines/clients so that virtual worlds can be independent from proprietary scaffolding. It's to 3D environments what HTML is to webpages.
+
+Planar outputs a dictionary-based abstraction of a 3D scene to JSON, including references to assets, 3D transformations, physics states, etc.
+
 Basic structure of Planar:
 - plane
+  - assets
+    - paths
   - global_properties
     - name (string)
     - population_max (integer)
@@ -22,8 +28,6 @@ Basic structure of Planar:
 
 TODO:
 - Dependency system
-  - list all assets referenced in scene at the top of the file
-  - add assets to list on add_object()
   - remember the URLs for web-based assets and have, on init, the program download all missing assets into the plane's folder
 - Abstractify (you heard me) assets vs their sources
   - Asset #UUID has source "PATH"

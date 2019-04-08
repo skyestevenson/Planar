@@ -27,6 +27,10 @@ world = json.load(world)
 print("\nGlobal Properties:")
 print("Gravity: {}m/s^2".format(world["global_properties"]["gravity"]))
 
+print("\nAsset list:")
+for asset in world["assets"]:
+    print(asset)
+
 print("\nObjects:")
 for key, value in world["objects"].items():
     print("{}\n- asset: {}\n- physics enabled: {}\n- location: {}".format(key, value["asset"], value["physics_enabled"], value["transform"]["t"]))

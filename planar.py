@@ -16,6 +16,7 @@ def init_plane(
 ):
     global plane
     plane = {
+        "assets" : [],
         "global_properties" : {},
         "objects" : {}
     }
@@ -44,7 +45,14 @@ def add_object(
         "transform" : transform,
         "physics_enabled" : physics_enabled
     }
+    # add asset to asset list
+    add_asset(asset)
 
+# add asset path to global asset list
+def add_asset(path):
+    # only add it if it's not in the asset list already
+    if path not in plane["assets"]:
+        plane["assets"].append(path)
 
 # export the result
 def export(plane, file_name = "planar_test.irl"):
