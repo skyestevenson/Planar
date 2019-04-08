@@ -22,7 +22,6 @@ Basic structure of Planar:
     - terrain
       - dimensions
       - heightmap asset
-
   - objects
     - uuid #
       - asset (string)
