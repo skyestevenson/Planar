@@ -1,101 +1,101 @@
 {
  "environment": {
-  "skybox": "HDRI_Night.exr", 
+  "skybox": "HDRI_Night.exr",
   "terrain": {
-   "heightmap": "LandscapeHeight.png", 
+   "heightmap": "LandscapeHeight.png",
    "dimensions": [
-    1000, 
+    1000,
     1000
    ]
   }
- }, 
+ },
  "links": [
   {
    "destination": [
-    500, 
-    500, 
+    500,
+    500,
     500
-   ], 
+   ],
    "location": [
-    100, 
-    150, 
+    100,
+    150,
     1.5
    ]
   }
- ], 
+ ],
  "objects": {
   "1e10f44b-5b1d-4914-a7e2-68dac0034efa": {
-   "physics_enabled": false, 
-   "asset": "Wall.obj", 
+   "physics_enabled": false,
+   "asset": "Wall.obj",
    "transform": {
     "s": [
-     1, 
-     1, 
+     1,
+     1,
      1
-    ], 
+    ],
     "r": [
-     0, 
-     0, 
+     0,
+     0,
      0
-    ], 
+    ],
     "t": [
-     0, 
-     0, 
+     0,
+     0,
      0
     ]
    }
-  }, 
+  },
   "77067dbe-4510-42a5-9de8-be19ddbd5385": {
-   "physics_enabled": true, 
-   "asset": "Block.obj", 
+   "physics_enabled": true,
+   "asset": "Block.obj",
    "transform": {
     "s": [
-     1, 
-     1, 
+     1,
+     1,
      1
-    ], 
+    ],
     "r": [
-     33.27, 
-     77, 
-     8, 
+     33.27,
+     77,
+     8,
      12.03
-    ], 
+    ],
     "t": [
-     128.51, 
-     33.27, 
+     128.51,
+     33.27,
      0.78
     ]
    }
   }
- }, 
+ },
  "assets": [
-  "HDRI_Night.exr", 
-  "LandscapeHeight.png", 
-  "Block.obj", 
+  "HDRI_Night.exr",
+  "LandscapeHeight.png",
+  "Block.obj",
   "Wall.obj"
- ], 
+ ],
  "global_properties": {
   "boundaries": {
    "y": [
-    -1000, 
+    -1000,
     1000
-   ], 
+   ],
    "x": [
-    -1000, 
+    -1000,
     1000
-   ], 
+   ],
    "z": [
-    -1000, 
+    -1000,
     1000
    ]
-  }, 
-  "gravity": -9.8, 
-  "name": "Aetheria", 
+  },
+  "gravity": -9.8,
+  "name": "Aetheria",
   "player_start": [
-   0, 
-   0, 
+   0,
+   0,
    0
-  ], 
+  ],
   "description": "This is the first Plane created with the Planar system. Basically, just a testbed."
  }
 }
